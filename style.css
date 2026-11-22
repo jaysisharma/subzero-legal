@@ -1,0 +1,71 @@
+:root {
+  --bg: #0a0a0a;
+  --surface: #141414;
+  --border: #2a2a2a;
+  --text: #f2f2f2;
+  --muted: #9e9e9e;
+  --accent: #00e676;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+  color: var(--text);
+}
+.brand span { color: var(--accent); }
+
+nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+nav .links a { color: var(--muted); text-decoration: none; margin-left: 16px; font-size: 14px; }
+nav .links a:hover, nav .links a[aria-current] { color: var(--text); }
+
+.eyebrow {
+  margin: 48px 0 4px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.15; letter-spacing: -0.8px; }
+h2 { margin: 40px 0 8px; font-size: 20px; letter-spacing: -0.2px; }
+.updated { color: var(--muted); margin: 0 0 24px; font-size: 14px; }
+
+p, li { color: #d6d6d6; }
+strong { color: var(--text); }
+a { color: var(--accent); }
+
+.callout {
+  border: 1px solid rgba(0, 230, 118, 0.3);
+  background: rgba(0, 230, 118, 0.06);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 20px 0;
+}
+
+.table-wrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--border); border-radius: 14px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 540px; }
+th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+th { background: var(--surface); color: var(--muted); font-size: 12px; letter-spacing: 0.5px; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+
+ol li, ul li { margin: 6px 0; }
+
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
